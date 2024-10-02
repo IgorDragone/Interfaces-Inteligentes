@@ -15,3 +15,4 @@ En esta práctica hemos dado los primeros pasos en Unity, realizando una escena 
 7. Agregar Script para la posición de cada objeto. Para ello hemos usado la propriedad `position` del componente `Transform`.
 
 ### Gif da la Ejecución
+![gif](video-ii-pr1.gif)
