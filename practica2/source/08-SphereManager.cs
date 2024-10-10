@@ -35,7 +35,6 @@ public class SphereManager : MonoBehaviour {
     float closestDistance = Mathf.Infinity;
     foreach (GameObject sphere in spheres) {
       float distance = Vector3.Distance(cube.transform.position, sphere.transform.position);
-			Debug.Log("Distance: " + distance);
       if (distance < closestDistance) {
         closestDistance = distance;
         closestSphere = sphere;
