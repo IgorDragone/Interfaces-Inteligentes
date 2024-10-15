@@ -31,3 +31,24 @@ Podemos añadir convertir la esfera en Trigger desde el componente Collider, mar
 En este caso la esfera caerá sobre cubo y plano, pero al ser Trigger los atravesará. 
 
 ## Parte 2 - Ejercicios
+Es el momento de realizar los ejercicios:
+
+### Ejercicio 1
+En el primer ejercicio vamos a mostrar por consola el resultado de multiplicar la velocidad (variable pública) por el valor del eje vertical y por el valor del eje horizontal cada vez que se pulsan las teclas flecha arriba-abajo ó flecha izquierda-derecha. Los valores de eje están entre -1 y 1 y los obtenemos con `Input.GetAxis()`. Para velocidad = 5, la consola se vería así:
+
+### Ejercicio 2
+Para mapear la tecla H a la función disparo, entramos en el Input Manager: `edit -> Project Settings -> Input Manager`. Ahí duplicamos el último eje, le cambiamos el nombre a Shoot y le asignamos la tecla H:
+
+### Ejercicio 3
+Para este ejercicio necesitamos dos variables públicas: `speed`, que indicará la velocidad(debe ser mayor que 1) y `moveDirection` , un Vector3 que indicará la dirección del movimiento. Al ejecutarlo, el cubo se moverá hacia la dirección indicada por el vector a la velocidad elegida. Al no usar Time.deltaTime, el movimiento no será nada fluido. Ahora analizamos 3 situaciones:
+- Si duplicamos las coordenadas de moveDirection, el cubo se moverá el doble de rápido en la misma dirección, cubriendo más distancia por fotograma.
+- Si duplicamos la velocidad, el cubo también se moverá más rápido en la misma dirección
+- Si la velocidad que usamos es menor que 1, el cubo se moverá más lentamente, cubriendo menos distancia en cada fotograma.
+- Si y > 0, el cubo se moverá de acuerdo con moveDirection, pero comenzará desde una posición más alta
+- Si intercambiamos el movimiento relativo al sistema de referencia local, el cubo se moverá en la dirección definida por su orientación actual. Por otro lado, si es el sistema de referencia global, se moverá en la misma dirección global, sin importar su orientación.
+
+### Ejercicio 4
+En este ejercicio vamos a mover el cubo con las flechas y la esfera con wasd. Para ello, modificamos `moveDirection` para que dependa de los inputs en el eje vertical y horizontal, en el caso del cubo, o de wasd, en el caso de la esfera. Al ejecutarlo, vemos que el movimiento sigue sin ser fluido. Este problema podemos arreglarlo en el siguiente ejercicio. Además, al usar wasd también se mueve el cubo, pues así está definido en el input manager. Podemos cambiarlo eliminando el botón positivo alternativo
+
+### Ejercicio 5
+Solucionamos el problema de la fluidez usando `Time.deltaTime`, que nos permite que que el movimiento del cubo y la esfera sean proporcionales al tiempo que ha transcurrido desde el último frame. 
