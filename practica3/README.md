@@ -52,3 +52,5 @@ En este ejercicio vamos a mover el cubo con las flechas y la esfera con wasd. Pa
 
 ### Ejercicio 5
 Solucionamos el problema de la fluidez usando `Time.deltaTime`, que nos permite que que el movimiento del cubo y la esfera sean proporcionales al tiempo que ha transcurrido desde el último frame. 
+
+### Ejercicio 6
