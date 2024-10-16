@@ -11,10 +11,12 @@ Vamos a crear una escena con un plano, un cubo y una esfera. Con este vamos a ex
 Para configurar esta escena, hay que añadir Rigidbody únicamente al cubo. Al ejecutarla, no pasa nada, debido a que el plano y la esfera no son obejtos sujetos a la física y el cubo ya se encuentra encima del plano, luego la gravedad no le afectaría.
 ### 2. Cubo y esfera como objetos físicos, plano no
 Para configurar esta escena, hay que añadir Rigidbody tanto al cubo como a la esfera. En este caso la esfera caerá sobre el cubo y el plano, que no se moverán. 
+![2](./img/Exp2.gif)
 ### 3. Cubo como objeto físico, plano no y esfera cinemática
 Para configurar esta escena, hay que añadir Rigidbody tanto al cubo como a la esfera. Además, en el componente Rigidbody de la esfera debemos marcar la opción "Is Kinematic". Al ejecutarlo, no pasa nada, ya que hacer la esfera cinemática significa que no será afectada por la gravedad ni otras fuerzas físicas
 ### 4. Plano, cubo y esfera como objetos físicos
 Para configurar esta escena, hay que añadir Rigidbody a todos los objetos de la escena. Al ejecutarlo, todos los objetos se verán sujetos a la fuerza de gravedad y caerán.
+![4](./img/Exp4.gif)
 ### 5. Plano, cubo y esfera como objetos físicos, esfera con 10 veces más masa que el cubo
 Podemos modificar la masa de la esfera en el componente Rigidbody, directamente desde el inspector. Vamos a considerar dos variaciones para el plano:
 - Plano no cinemático: en este caso, todos los objetos caerán al vacío
