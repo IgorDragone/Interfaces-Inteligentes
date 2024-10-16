@@ -76,14 +76,17 @@ En este ejercicio, la rotación del objeto dependerá del eje horizontal. El obj
 Para este ejercicio vamos a crear un cilindro como objeto físico, es decir, con RigidBody. El objetivo es imprimir un mensaje por pantalla cuando la esfera o el cubo colisionen con él. Para esto, usamos el evento `OnCollisionEnter` con una colisión como argumento y los tags asignados a cada objeto para saber qué objeto ha colisionado con el cilindro. Para ver más resultados, he creado dos escenarios posibles:
 1. Cubo y esfera se mueven hacia el cilindro. Al ejecutar nos damos cuenta que, dado que ni esfera ni cubo son objetos físicos, estos atraviesan al cilindro, por lo que resulta más difícil detectar las colisiones.
 2. El cilindro se mueve hacia el cubo y la esfera. En este caso, las detecciones de colisiones resultan más fáciles. Sin embargo, hay que tener en cuenta una cosa importante: al ser el cilindro un objeto físico, no podemos cambiar su posición con Transform, así que tendremos que usar `AddForce` del componente `RigidBody`. Al ejecutarlo vemos que el cilindro se choca con esos objetos y se imprime el mensaje en la terminal
+3. ![ej9](./img/ej9-pr3.gif)
 
 ### Ejercicio 10
 En este ejercicio convertimos ambos objetos en físicos, con el cubo siendo cinemático. Al ser ahora todos físicos, no van a ser movidos por transform, sino por AddForce. Volvemos a nuestros dos escenarios:
 1. Cubo y esfera se mueven hacia el cilindro. El cubo, al ser cinemático, no puede ser movido por AddForce. Por otro lado, la esfera si puede moverse y colisiona claramente con el cilindro, moviéndolo.
 2. El cilindro se mueve hacia el cubo y la esfera. En este caso consigue desplazar a la esfera pero no al cubo.
+![ej10](./img/ej10-pr3.gif)
 
 ### Ejercicio 11
 En este ejercicio configuramos el cilindro para que sea de tipo Trigger. Esto permitirá que el cilindro detecte cuándo otros objetos atraviesan su collider sin una colisión física completa. Para evitar que se caiga, hacemos que sea cinemático. Modificamos el script cambiando el evento, usando esta vez `OnTriggerEnter` con un Collider como argumento. Al ser Trigger, los objetos van a atravesar el cilindro:
+![ej11](./img/Ej11-pr3.gif)
 
 ### Ejercicio 12
 En este ejercicio vamos a añadir un cilindro(con color diferente al otro) como objeto físico. Vamos a configurarlo para poder controlar su movimiento a través de wasd. El objetivo del ejercicio es estudiar la interacción de este cilindro con una esfera en diversas situaciones:
