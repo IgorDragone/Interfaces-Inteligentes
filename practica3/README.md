@@ -78,7 +78,9 @@ Para este ejercicio vamos a crear un cilindro como objeto físico, es decir, con
 2. El cilindro se mueve hacia el cubo y la esfera. En este caso, las detecciones de colisiones resultan más fáciles. Sin embargo, hay que tener en cuenta una cosa importante: al ser el cilindro un objeto físico, no podemos cambiar su posición con Transform, así que tendremos que usar `AddForce` del componente `RigidBody`. Al ejecutarlo vemos que el cilindro se choca con esos objetos y se imprime el mensaje en la terminal
 
 ### Ejercicio 10
-En este ejercicio convertimos ambos objetos en físicos, con el cubo siendo cinemático. Al ejecutar ahora sí que podemos apreciar las colisiones de forma más fácil.
+En este ejercicio convertimos ambos objetos en físicos, con el cubo siendo cinemático. Al ser ahora todos físicos, no van a ser movidos por transform, sino por AddForce. Volvemos a nuestros dos escenarios:
+1. Cubo y esfera se mueven hacia el cilindro. El cubo, al ser cinemático, no puede ser movido por AddForce. Por otro lado, la esfera si puede moverse y colisiona claramente con el cilindro, moviéndolo.
+2. El cilindro se mueve hacia el cubo y la esfera. En este caso consigue desplazar a la esfera pero no al cubo.
 
 ### Ejercicio 11
 En este ejercicio configuramos el cilindro para que sea de tipo Trigger. Esto permitirá que el cilindro detecte cuándo otros objetos atraviesan su collider sin una colisión física completa. Para evitar que se caiga, hacemos que sea cinemático. Modificamos el script cambiando el evento, usando esta vez `OnTriggerEnter` con un Collider como argumento. Al ser Trigger, los objetos van a atravesar el cilindro:
