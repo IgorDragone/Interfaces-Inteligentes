@@ -72,3 +72,13 @@ En este ejercicio convertimos ambos objetos en físicos, con el cubo siendo cine
 
 ### Ejercicio 11
 En este ejercicio configuramos el cilindro para que sea de tipo Trigger. Esto permitirá que el cilindro detecte cuándo otros objetos atraviesan su collider sin una colisión física completa. Para evitar que se caiga, hacemos que sea cinemático. Modificamos el script cambiando el evento, usando esta vez `OnTriggerEnter` con un Collider como argumento. Al ser Trigger, los objetos van a atravesar el cilindro:
+
+
+### Ejercicio 12
+En este ejercicio vamos a añadir un cilindro(con color diferente al otro) como objeto físico. Luego, vamos a configurarlo para poder controlar su movimiento a través de wasd. El objetivo del ejercicio es estudiar la interacción de este cilindro con una esfera en diversas situaciones:
+- Esfera con masa 10 veces mayor. En este caso el cilindro tendrá dificultad para mover la esfera, y al colisionar, la esfera empujará al cilindro hacia atrás debido a la diferencia de masa.
+- Esfera con masa 10 veces menor. En este caso el cilindro será capaz de empujar la esfera con facilidad. La esfera se moverá más rápido y será más fácil de desplazar.
+- Esfera cinemática. En este caso la esfera no reaccionará a las fuerzas aplicadas por el cilindro y permanecerá inmóvil
+- Esfera como trigger. En este caso no habrá colisión física
+- Cilindro con fricción duplicada. En este caso el cilindro se moverá más lentamente debido al aumento de fricción con el suelo. 
+- Cilindro sin fricción. En este caso el cilindro se deslizará por la superficie con facilidad y perderá menos velocidad al moverse. 
