@@ -63,14 +63,19 @@ Solucionamos el problema de la fluidez usando `Time.deltaTime`, que nos permite 
 ### Ejercicio 6
 En este ejercicio vamos a cambiar la forma en la que se mueve el cubo: en vez de manejarlo con flechas, vamos a hacer que siga a la esfera. Para ello, debemos sacar el vector de dirección de movimiento, restando la posición del cubo a la de la esfera. Es importante asignarle a la y de este vector el valor 0, pues no queremos que el cubo suba o baje. Luego, este vector debe ser normalizado, para que el avance no dependa de la distancia entre ambos objetos.
 ![ej6](./img/ej6-pr3.gif)
+
 ### Ejercicio 7
 Vamos a hacer que el cubo gire hacia la esfera, para que su "forward" siempre sea hacia la esfera. Para ello usamos el método `LookAt`, que rota el objeto. Al tener el forward del cubo siempre apuntando a la esfera, nos bastarà modificar únicamente `transform.forward` para conseguir que el cubo siga a la esfera. Para ver mejor el efecto de la rotación, hemos modificado el comportamiento de la esefra, que se moverá en los ejes X-Z.
 ![ej7](./img/ej7-pr3.gif)
+
 ### Ejercicio 8
 En este ejercicio, la rotación del objeto dependerá del eje horizontal. El objeto siempre se moverá hacia delante, lo único que podemos controlar nosotros con las flechas es la rotación de este.
 ![ej8](./img/ej8-pr3.gif)
+
 ### Ejercicio 9
-Para este ejercicio vamos a crear un cilindro como objeto físico, es decir, con RigidBody. El objetivo es imprimir un mensaje por pantalla cuando la esfera o el cubo colisionen con él. Para esto, usamos el evento `OnCollisionEnter` con una colisión como argumento y los tags asignados a cada objeto para saber qué objeto ha colisionado con el cilindro. Al ejecutar nos damos cuenta que, dado que ni esfera ni cubo son objetos físicos, estos atraviesan al cilindro, por lo que resulta más difícil detectar las colisiones.
+Para este ejercicio vamos a crear un cilindro como objeto físico, es decir, con RigidBody. El objetivo es imprimir un mensaje por pantalla cuando la esfera o el cubo colisionen con él. Para esto, usamos el evento `OnCollisionEnter` con una colisión como argumento y los tags asignados a cada objeto para saber qué objeto ha colisionado con el cilindro. Para ver más resultados, he creado dos escenarios posibles:
+1. Cubo y esfera se mueven hacia el cilindro. Al ejecutar nos damos cuenta que, dado que ni esfera ni cubo son objetos físicos, estos atraviesan al cilindro, por lo que resulta más difícil detectar las colisiones.
+2. El cilindro se mueve hacia el cubo y la esfera. En este caso, las detecciones de colisiones resultan más fáciles. Sin embargo, hay que tener en cuenta una cosa importante: al ser el cilindro un objeto físico, no podemos cambiar su posición con Transform, así que tendremos que usar `AddForce` del componente `RigidBody`. Al ejecutarlo vemos que el cilindro se choca con esos objetos y se imprime el mensaje en la terminal
 
 ### Ejercicio 10
 En este ejercicio convertimos ambos objetos en físicos, con el cubo siendo cinemático. Al ejecutar ahora sí que podemos apreciar las colisiones de forma más fácil.
