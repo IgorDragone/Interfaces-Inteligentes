@@ -57,3 +57,6 @@ Solucionamos el problema de la fluidez usando `Time.deltaTime`, que nos permite 
 
 ### Ejercicio 6
 En este ejercicio vamos a cambiar la forma en la que se mueve el cubo: en vez de manejarlo con flechas, vamos a hacer que siga a la esfera. Para ello, debemos sacar el vector de dirección de movimiento, restando la posición del cubo a la de la esfera. Es importante asignarle a la y de este vector el valor 0, pues no queremos que el cubo suba o baje. Luego, este vector debe ser normalizado, para que el avance no dependa de la distancia entre ambos objetos.
+
+### Ejercicio 7
+Vamos a hacer que el cubo gire hacia la esfera, para que su "forward" siempre sea hacia la esfera. Para ello usamos el método `LookAt`, que rota el objeto. Al tener el forward del cubo siempre apuntando a la esfera, nos bastarà modificar únicamente `transform.forward` para conseguir que el cubo siga a la esfera. Para ver mejor el efecto de la rotación, hemos modificado el comportamiento de la esefra, que se moverá en los ejes X-Z.
