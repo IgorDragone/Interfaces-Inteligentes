@@ -23,12 +23,14 @@ Podemos modificar la masa de la esfera en el componente Rigidbody, directamente 
 Vamos a considerar dos variaciones para el plano:
 - Plano no cinemático: en este caso, todos los objetos caerán al vacío
 - Plano cinemático: en este caso, la esfera caerá sobre el cubo y, al tener una masa 100 veces mayor, va a desplazarlo.
+![6](./img/Exp6.gif)
 ### 7. Plano, cubo y esfera como objetos físicos, esfera con fricción
 Podemos añadir fricción a la esfera de la siguiente forma: primero creamos un nuevo material de física, luego cambiamos los valores de fricción por los elegidos y por último le asignamos este material al componente Collider de la esfera. Al ejecutar, no podemos apreciar grandes cambios en el comportamiento de la esfera: aunque hayas aumentado su fricción, esta sigue cayendo encima del cubo y rodando por el plano.
 ### 8. Plano y cubo como objetos físicos, esfera como objeto no físico y con Trigger
 Podemos añadir convertir la esfera en Trigger desde el componente Collider, marcando en el inspector la opción "Is Trigger". Al ejecutar, dado que la esfera no es un objeto físico, no va a pasar nada. 
 ### 9. Plano, cubo y esfera como objetos físicos, esfera con Trigger
-En este caso la esfera caerá sobre cubo y plano, pero al ser Trigger los atravesará. 
+En este caso la esfera caerá sobre cubo y plano, pero al ser Trigger los atravesará. ç
+![9](./img/Exp9.gif)
 
 ## Parte 2 - Ejercicios
 Es el momento de realizar los ejercicios:
@@ -57,7 +59,6 @@ Solucionamos el problema de la fluidez usando `Time.deltaTime`, que nos permite 
 
 ### Ejercicio 6
 En este ejercicio vamos a cambiar la forma en la que se mueve el cubo: en vez de manejarlo con flechas, vamos a hacer que siga a la esfera. Para ello, debemos sacar el vector de dirección de movimiento, restando la posición del cubo a la de la esfera. Es importante asignarle a la y de este vector el valor 0, pues no queremos que el cubo suba o baje. Luego, este vector debe ser normalizado, para que el avance no dependa de la distancia entre ambos objetos.
-![6](./img/Exp6.gif)
 
 ### Ejercicio 7
 Vamos a hacer que el cubo gire hacia la esfera, para que su "forward" siempre sea hacia la esfera. Para ello usamos el método `LookAt`, que rota el objeto. Al tener el forward del cubo siempre apuntando a la esfera, nos bastarà modificar únicamente `transform.forward` para conseguir que el cubo siga a la esfera. Para ver mejor el efecto de la rotación, hemos modificado el comportamiento de la esefra, que se moverá en los ejes X-Z.
@@ -67,7 +68,6 @@ En este ejercicio, la rotación del objeto dependerá del eje horizontal. El obj
 
 ### Ejercicio 9
 Para este ejercicio vamos a crear un cilindro como objeto físico, es decir, con RigidBody. El objetivo es imprimir un mensaje por pantalla cuando la esfera o el cubo colisionen con él. Para esto, usamos el evento `OnCollisionEnter` con una colisión como argumento y los tags asignados a cada objeto para saber qué objeto ha colisionado con el cilindro. Al ejecutar nos damos cuenta que, dado que ni esfera ni cubo son objetos físicos, estos atraviesan al cilindro, por lo que resulta más difícil detectar las colisiones.
-![9](./img/Exp9.gif)
 
 ### Ejercicio 10
 En este ejercicio convertimos ambos objetos en físicos, con el cubo siendo cinemático. Al ejecutar ahora sí que podemos apreciar las colisiones de forma más fácil.
