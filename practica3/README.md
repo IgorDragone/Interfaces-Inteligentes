@@ -58,17 +58,17 @@ En este ejercicio vamos a mover el cubo con las flechas y la esfera con wasd. Pa
 
 ### Ejercicio 5
 Solucionamos el problema de la fluidez usando `Time.deltaTime`, que nos permite que que el movimiento del cubo y la esfera sean proporcionales al tiempo que ha transcurrido desde el último frame. 
-![ej5](ej5-pr3.gif)
+![ej5](./img/ej5-pr3.gif)
 
 ### Ejercicio 6
 En este ejercicio vamos a cambiar la forma en la que se mueve el cubo: en vez de manejarlo con flechas, vamos a hacer que siga a la esfera. Para ello, debemos sacar el vector de dirección de movimiento, restando la posición del cubo a la de la esfera. Es importante asignarle a la y de este vector el valor 0, pues no queremos que el cubo suba o baje. Luego, este vector debe ser normalizado, para que el avance no dependa de la distancia entre ambos objetos.
-![ej6](ej6-pr3.gif)
+![ej6](./img/ej6-pr3.gif)
 ### Ejercicio 7
 Vamos a hacer que el cubo gire hacia la esfera, para que su "forward" siempre sea hacia la esfera. Para ello usamos el método `LookAt`, que rota el objeto. Al tener el forward del cubo siempre apuntando a la esfera, nos bastarà modificar únicamente `transform.forward` para conseguir que el cubo siga a la esfera. Para ver mejor el efecto de la rotación, hemos modificado el comportamiento de la esefra, que se moverá en los ejes X-Z.
-![ej7](ej7-pr3.gif)
+![ej7](./img/ej7-pr3.gif)
 ### Ejercicio 8
 En este ejercicio, la rotación del objeto dependerá del eje horizontal. El objeto siempre se moverá hacia delante, lo único que podemos controlar nosotros con las flechas es la rotación de este.
-![ej8](ej8-pr3.gif)
+![ej8](./img/ej8-pr3.gif)
 ### Ejercicio 9
 Para este ejercicio vamos a crear un cilindro como objeto físico, es decir, con RigidBody. El objetivo es imprimir un mensaje por pantalla cuando la esfera o el cubo colisionen con él. Para esto, usamos el evento `OnCollisionEnter` con una colisión como argumento y los tags asignados a cada objeto para saber qué objeto ha colisionado con el cilindro. Al ejecutar nos damos cuenta que, dado que ni esfera ni cubo son objetos físicos, estos atraviesan al cilindro, por lo que resulta más difícil detectar las colisiones.
 
