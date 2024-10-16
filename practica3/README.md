@@ -60,3 +60,6 @@ En este ejercicio vamos a cambiar la forma en la que se mueve el cubo: en vez de
 
 ### Ejercicio 7
 Vamos a hacer que el cubo gire hacia la esfera, para que su "forward" siempre sea hacia la esfera. Para ello usamos el método `LookAt`, que rota el objeto. Al tener el forward del cubo siempre apuntando a la esfera, nos bastarà modificar únicamente `transform.forward` para conseguir que el cubo siga a la esfera. Para ver mejor el efecto de la rotación, hemos modificado el comportamiento de la esefra, que se moverá en los ejes X-Z.
+
+### Ejercicio 8
+En este ejercicio, la rotación del objeto dependerá del eje horizontal. El objeto siempre se moverá hacia delante, lo único que podemos controlar nosotros con las flechas es la rotación de este.
