@@ -63,3 +63,6 @@ Vamos a hacer que el cubo gire hacia la esfera, para que su "forward" siempre se
 
 ### Ejercicio 8
 En este ejercicio, la rotación del objeto dependerá del eje horizontal. El objeto siempre se moverá hacia delante, lo único que podemos controlar nosotros con las flechas es la rotación de este.
+
+### Ejercicio 9
+Para este ejercicio vamos a crear un cilindro como objeto físico, es decir, con RigidBody. El objetivo es imprimir un mensaje por pantalla cuando la esfera o el cubo colisionen con él. Para esto, usamos el evento `OnCollisionEnter` y los tags asignados a cada objeto para saber qué objeto ha colisionado con el cilindro.
