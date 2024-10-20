@@ -1,7 +1,6 @@
 using UnityEngine;
 
-public class CylinderTrigger : MonoBehaviour
-{
+public class CylinderTrigger : MonoBehaviour {
   public delegate void CollisionAllert();
   public static event CollisionAllert OnColisionWithCube;
   private void OnTriggerEnter(Collider other) {
