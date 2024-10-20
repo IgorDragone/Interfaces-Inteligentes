@@ -12,3 +12,7 @@ En este ejercicio necesitamos una escena con un cubo físico, un cílindro y cin
 ### Ejercicio 2
 En este ejercicio simplemente sustituimos las esferas con arañas y el cilindro con el huevo. Para ello importamos el asset Fuga spiders al proyecto y elegimos las arañas verdes y azules para el tipo 1 y las arañas rojas para el tipo 2.
 ![2](./img/ej2.png)
+
+### Ejercicio 3 y 9
+En este ejercicio tenemos una escena 5 tipos de objetos físicos: un cubo cinemático,  
+![3](./img/ej3-pr4.gif)
