@@ -14,5 +14,10 @@ En este ejercicio simplemente sustituimos las esferas con arañas y el cilindro 
 ![2](./img/ej2.png)
 
 ### Ejercicio 3 y 9
-En este ejercicio tenemos una escena 5 tipos de objetos físicos: un cubo cinemático,  
+En este ejercicio tenemos una escena 5 tipos de objetos físicos: un cubo cinemático, arañas tipo 1 y 2 y huevos tipo 1 y 2. Queremos obtener los siguientes comportamientos:
+- Cuando el cubo toca una araña del tipo 2, las arañas en el grupo 1 se acercan a un objeto seleccionado. En este caso seleccioné un huevo de tipo 1. Para conseguir este escenario, he configurado el cubo como notificador y las arañas de tipo 1 como subscriptores, usando otra vez corrutinas para los callbacks.
+- Cuando el cubo toca una araña del tipo 1, las arañas del grupo 1 se dirigen hacia los huevos del grupo 2 que serán objetos físico. Si alguna araña colisiona con uno de ellos debe cambiar de color. Repetimos lo mismo que en el escenario anterior. Para cambiar el color, usamos el método `GetComponentInChildren<SkinnedMeshRenderer>()`
+
+Además, para evitar repetir las configuraciones en todos los objetos 3D, he creado un prefab para cada objeto. 
+
 ![3](./img/ej3-pr4.gif)
