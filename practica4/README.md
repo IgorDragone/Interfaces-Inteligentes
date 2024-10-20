@@ -11,4 +11,4 @@ En este ejercicio necesitamos una escena con un cubo físico, un cílindro y cin
 
 ### Ejercicio 2
 En este ejercicio simplemente sustituimos las esferas con arañas y el cilindro con el huevo. Para ello importamos el asset Fuga spiders al proyecto y elegimos las arañas verdes y azules para el tipo 1 y las arañas rojas para el tipo 2.
-![2](./img/ej2)
+![2](./img/ej2.png)
