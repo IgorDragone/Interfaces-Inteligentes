@@ -39,6 +39,9 @@ De esta forma hemos creado un minijuego, que consiste en hacer mover las arañas
 ![5](./img/ej5.gif)
 
 ### Ejercicio 6
+En vez de visualizar los puntos por consola, vamos a verlos en la pantalla a través de una UI. Para ello creamos, un `Canvas` (GameObject > UI > Canvas), le agregamos un objeto de texto (Text - TextMeshPro) con la frase "Score: 0" y modificamos el script ScoreManager.cs para que lo actualice.
+
+![6](./img/ej6.png)
 
 ### Ejercicio 7
 
