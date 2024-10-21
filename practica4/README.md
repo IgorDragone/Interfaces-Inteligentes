@@ -44,5 +44,8 @@ En vez de visualizar los puntos por consola, vamos a verlos en la pantalla a tra
 ![6](./img/ej6.png)
 
 ### Ejercicio 7
+Añadimos otro texto que nos indica las recomopensas que hemos obtenido en el juego (en este caso, estrellas). Cada 100 puntos conseguidos, obtenemos una estrella.
+
+![7](./img/ej7.gif)
 
 ### Ejercicio 8
