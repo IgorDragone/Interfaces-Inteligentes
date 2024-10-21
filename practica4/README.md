@@ -28,3 +28,11 @@ En este ejercicio vamos a tener que elegir un objeto de referencia (elegí un hu
 - Las arañas del grupo 2 se orientan hacia un objeto ubicado en la escena con ese propósito (elegí otro huevo de tipo 2). El cubo es el notificador y las arañas de tipo 2 los suscriptores.
 
 ![4](./img/ej4.gif)
+
+### Ejercicio 5
+
+### Ejercicio 6
+
+### Ejercicio 7
+
+### Ejercicio 8
