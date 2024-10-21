@@ -49,3 +49,9 @@ Añadimos otro texto que nos indica las recomopensas que hemos obtenido en el ju
 ![7](./img/ej7.gif)
 
 ### Ejercicio 8
+Para este ejercicio he decidio crear un minijuego que consiste en lo siguiente: el jugador empieza con 100 de vida y es perseguido por las arañas. Cada vez que una araña colisione con él, pierde 10 puntos de vida. Cuando la vida llega a 0, el juego se acaba. 
+He usado elementos como el canvas para representar la vida del jugador y eventos, en los que el script encargado de detectar colisiones es el notificador y el script encargado de manejar la salud del jugador es el suscriptor.
+
+![8](./img/ej8.gif)
+
+![8.1](./img/ej8.png)
