@@ -25,5 +25,6 @@ Además, para evitar repetir las configuraciones en todos los objetos 3D, he cre
 ### Ejercicio 4
 En este ejercicio vamos a tener que elegir un objeto de referencia (elegí un huevo de tipo 1). Cuando el cubo se acerque a este objeto, deben suceder dos cosas:
 - Las arañas del grupo 1 se teletransportan a un huevo objetivo (elegí un huevo de tipo 2). El cubo es el notificador y las arañas de tipo 1 los suscriptores
-- Las arañas del grupo 2 se orientan hacia un objeto ubicado en la escena con ese propósito (elegí otro huevo de tipo 2). El cubo es el notificador y las arañas de tipo 2 los suscriptores
+- Las arañas del grupo 2 se orientan hacia un objeto ubicado en la escena con ese propósito (elegí otro huevo de tipo 2). El cubo es el notificador y las arañas de tipo 2 los suscriptores.
+
 ![4](./img/ej4.gif)
