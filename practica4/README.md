@@ -35,6 +35,7 @@ En este ejercicio vamos a implementar 2 nuevas mecánicas:
 - Sistema de puntuación. Cuando una araña de tipo 1 recolecte un huevo, el jugador ganará 5 puntos, y cuando lo haga una de tipo 2, ganará 10. Las arañas son los notificadores y el sistema de puntuación, que se va incrementando, es el subscriptor.
 
 De esta forma hemos creado un minijuego, que consiste en hacer mover las arañas para que vayan a recolectar huevos. En mi caso, para mover las arañas de tipo 1 hay que colsionar con ellas, mientras que para mover a las arañas de tipo 2, habría que acercarse al cilindro del medio.
+
 ![5](./img/ej5.gif)
 
 ### Ejercicio 6
