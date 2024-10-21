@@ -12,6 +12,11 @@ public class ScoreManager : MonoBehaviour {
 
   private void UpdateScore(int points) {
     playerScore += points;
-    Debug.Log("Player Score: " + playerScore);
+		UpdateScoreUI();
+    // Debug.Log("Player Score: " + playerScore);
   }
+
+	private void UpdateScoreUI() {
+		scoreText.text = "Score: " + playerScore.ToString();
+	}
 }
