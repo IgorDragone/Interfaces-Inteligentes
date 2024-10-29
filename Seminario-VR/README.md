@@ -23,6 +23,8 @@ En primer lugar vamos a mover la cámara:
 
 En el segundo caso realizamos las mismas operaciones pero en orden invertido. Sin embargo, el resultado que obtendríamos no sería el mismo: al rotar primero, los ejes locales del objeto cambiarán, luego al desplazar el objeto, la posición final no coincidirá con la del primer caso.
 ### 3. Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura un volumen de vista que la recorte parcialmente.
+Para realizar este ejercicio, primero creamos una esfera de radio 1 (desde GameObject). En segundo lugar, nos colocamos en la cámara y modificamos el ángulo de apertura o FOV, pasando del valor 60 a 12. De esta forma, la esfera se ve parcialmente recortada:
+![3](./img/3.png)
 ### 4.Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura el volumen de vista para que la deje fuera de la vista.
 ### 5. Como puedes aumentar el ángulo de la cámara. Qué efecto tiene disminuir el ángulo de la cámara.
 ### 6. Es correcta la siguiente afirmación: Para realizar la proyección al espacio 2D, en el inspector de la cámara, cambiaremos el valor de projection, asignándole el valor de orthographic
