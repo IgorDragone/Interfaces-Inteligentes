@@ -10,6 +10,12 @@ En este seminario vamos a responder a 15 preguntas, relacionando en los casos qu
 ## Preguntas
 
 ### 1. Qué funciones se pueden usar en los scripts de Unity para llevar a cabo traslaciones, rotaciones y escalados.
+Se usan métodos y funciones de las clases Transform y RigidBody:
+- Para traslaciones tenemos `transform.position`, que permite acceder o asignar directamente una nueva posición en el espacio 3D, `transform.Translate(Vector3)`, que mueve el objeto una distancia específica en la dirección indicada por el vector y finalmente `Rigidbody.MovePosition(Vector3)`, para objetos físicos.
+- Para rotaciones tenemos `transform.rotation`, que permite establecer la rotación del objeto directamente mediante un Quaternion, `transform.Rotate(Vector3)`, que aplica una rotación adicional en los ejes X, Y y Z relativos al objeto y `Rigidbody.MoveRotation(Quaternion)`, para objetos físicos. También existe `transform.RotateAround(Vector3 point, Vector3 axis, float angle)`, donde el objeto rota alrededor de un punto específico.
+- Para escalados tenemos `transform.localScale`, que permite ajustar la escala del objeto en los ejes X, Y y Z
+
+Todos estos métodos modifican el sistema de referencia del objeto al que se le aplican, multiplicando cada vértice por la matriz de transformación.
 ### 2. Como trasladarías la cámara 2 metros en cada uno de los ejes y luego la rotas 30º alrededor del eje Y?. Rota la cámara alrededor del eje Y 30ª y desplázala 2 metros en cada uno de los ejes. ¿Obtendrías el mismo resultado en ambos casos?. Justifica el resultado
 ### 3. Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura un volumen de vista que la recorte parcialmente.
 ### 4.Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura el volumen de vista para que la deje fuera de la vista.
