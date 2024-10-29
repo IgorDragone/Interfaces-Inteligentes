@@ -17,6 +17,11 @@ Se usan métodos y funciones de las clases Transform y RigidBody:
 
 Todos estos métodos modifican el sistema de referencia del objeto al que se le aplican, multiplicando cada vértice por la matriz de transformación.
 ### 2. Como trasladarías la cámara 2 metros en cada uno de los ejes y luego la rotas 30º alrededor del eje Y?. Rota la cámara alrededor del eje Y 30ª y desplázala 2 metros en cada uno de los ejes. ¿Obtendrías el mismo resultado en ambos casos?. Justifica el resultado
+En primer lugar vamos a mover la cámara:
+- Para trasladarla 2 metros en cada uno de los ejes usamos transform.Translate(2,2,2)
+- Para rotar 30 grados alrededor del eje Y usamos transform.Rotate(0,30,0)
+
+En el segundo caso realizamos las mismas operaciones pero en orden invertido. Sin embargo, el resultado que obtendríamos no sería el mismo: al rotar primero, los ejes locales del objeto cambiarán, luego al desplazar el objeto, la posición final no coincidirá con la del primer caso.
 ### 3. Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura un volumen de vista que la recorte parcialmente.
 ### 4.Sitúa la esfera de radio 1 en el campo de visión de la cámara y configura el volumen de vista para que la deje fuera de la vista.
 ### 5. Como puedes aumentar el ángulo de la cámara. Qué efecto tiene disminuir el ángulo de la cámara.
