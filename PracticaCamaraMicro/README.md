@@ -8,6 +8,9 @@ En esta práctica vamos a aprender a usar componentes de entrada con Unity 3D, e
 ## Ejercicios de Micrófono
 
 ### Ejercicio 1
+Para el primer ejercicio partimos de la escena de las arañas en las que estas se mueven hacia los huevos al contactar el cubo con ellas. Nuestro objetivo es añadir un sonido de masticación cuando la araña alcance el huevo. Para ello creamos un objeto de tipo `Audio Source` y en el inspector le asignamos el sonido de la carpeta adjunta. Luego creamos un script que reproduzca el sonido cuando la araña colisione con el huevo, a través del método `Pay()`
+
+![ej1](img/1.mov)
 
 ### Ejercicio 2
 
