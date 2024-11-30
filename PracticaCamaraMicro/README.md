@@ -38,3 +38,7 @@ Para este ejercicio simplemente añadimos un Debug.Log con el nombre de la camar
 ![4](./img/4.png)
 
 ### Ejercicio 5
+En este último ejercicio debemos añadir la posibilidad de almacenar los fotogramas tomados con x como imágenes fijas. Para ello hemos creado la función `SaveTextureAsPNG`, que convierte la textura en una imagen png y lo almacena en una ruta específica. En nuestro caso, hemos decidido almacenar las texturas en una subcarpeta de Assets llamada Captures. En cuanto al nombre de estas imágenes, por comodidad hemos decidido llamarlas con la formula "CapturedImage_ + fecha y hora que se tomó".
+![5b](./img/5b.png)
+![5a](./img/5a.png)
+
