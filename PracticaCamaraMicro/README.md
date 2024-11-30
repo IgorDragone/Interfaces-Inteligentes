@@ -30,11 +30,11 @@ https://github.com/user-attachments/assets/ec4e9da7-cef1-46ff-b9ca-1eb85c192ecd
 ### Ejercicio 3
 En este ejercicio seguimos con la escena de la pantalla y los altavoces. En este caso lo que queremos es que en la pantalla aparezca lo que capture nuestra webcam. Además, según la tecla que pulsemos, podemos arrancar la cámara ("s"), detenerla ("p") o tomar la foto ("x"). Para ello usamos el módulo `WebCamTexture`, con sus métodos Play(), Stop(). Para que en la pantalla aparezca el fotograma, cambiamos el material de esta a través del Renderer, asignandole o la textura de la webcam ("s") o la del fotograma tomado ("x")
 
-![3])./img/3.gif)
+![3](./img/3.gif)
 
 ### Ejercicio 4
 Para este ejercicio simplemente añadimos un Debug.Log con el nombre de la camara, al que podemos acceder a través de `WebCamTexture.devices`. Normalmente nos interesa el nombre del primer elemento, es decir `WebCamTexture.devices[0].name`
 
-![4](./img/4)
+![4](./img/4.png)
 
 ### Ejercicio 5
