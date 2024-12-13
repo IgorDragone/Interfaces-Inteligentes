@@ -12,8 +12,11 @@ En este primer ejercicio vamos a mostrar en la UI los velores de:
 - **Aceleración**.
 - **Gravedad**.
 - **Latitud, Longitud y Altitud**.
+  
 ### Valores en el laboratorio
+![lab](./img/lab.JPG)
 ### Valores en el jardín
+![lab](./img/jardin.JPG)
 
 ## Ejercicio 2
 
