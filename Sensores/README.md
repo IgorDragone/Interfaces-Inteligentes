@@ -8,10 +8,10 @@ En esta práctica vamos a aprender a usar sensores con Unity 3D, en específico 
 
 ## Ejercicio 1
 En este primer ejercicio vamos a mostrar en la UI los velores de:
-- **Velocidad Angular**.
-- **Aceleración**.
-- **Gravedad**.
-- **Latitud, Longitud y Altitud**.
+- **Velocidad Angular**. Usamos `Input.gyro.rotationRate;`
+- **Aceleración**. Usamos `Input.acceleration`
+- **Gravedad**. Usamos una constante `9.81`
+- **Latitud, Longitud y Altitud**. Usamos `Input.location.lastData.<latitude/longitude/altitude>`
   
 ### Valores en el laboratorio
 ![lab](./img/lab.JPG)
